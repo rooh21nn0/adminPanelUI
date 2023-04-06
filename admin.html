@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin portal</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="header">
+        <h2>Welcome on your dashboard</h2>
+    </div>
+    <div class="main-container">
+
+        <div class="teacher-container">
+            <div>
+                <label>Class timming</label>
+                <select id="timming" name="timming">
+                    <option value=""></option>
+                    <option value="9am to 11am">9am to 11am</option>
+                    <option value="2pm to 4pm">2pm to 4pm</option>
+                    <option value="7pm to 9pm">7pm to 9pm</option>
+    
+    
+    
+                </select>
+                <br>
+                
+            </div>
+            <div class="class-schedule">
+                <label>Class Schedule</label>
+    
+                <select id="schedule" name="" >
+                    <option value=""></option>
+                    <option value="Monday to wednesday">Monday to wednesday</option>
+                    <option value="Thursday to Saturday">Thursday to Saturday</option>
+                    <option value="weekend">weekend</option>
+                </select>
+            </div>
+            <div class="teach-name">
+                <label>Teacher name</label>
+                <select id="teacher" name="">
+                    <option value=""></option>
+                    <option value="ghous">Sir Ghous</option>
+                    <option value="salman">Sir Salman</option>
+                    <option value="haider">Sir Haider</option>
+                </select>
+            </div>
+    
+            <div class="section">
+                <label>Section</label>
+                <select name="" id="section">
+                    <option value="">
+    
+                    </option>
+                    <option value=""></option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select> 
+            </div>
+    
+            <div class="course">
+                <label>Course</label>
+                <select id="course" name="" >
+                    <option value=""></option>
+                    <option value="Web">Web and mobile</option>
+                    <option value="Repairing">Mobile Repairing</option>
+                </select>
+            </div>
+    
+            <div class="batch">
+                <label>Batch</label>
+                <select id="batch" name="">
+                    <option value=""></option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+    
+    
+    
+    
+    
+    
+        </div>
+        <button type="button" id="atendaceMark">Mark your Attendance</button>
+        </div>
+        <div class="studentsDetails">
+            <div class="studentinforma">
+
+               <label>Name</label>
+                <input type=" text" id=" name">
+
+
+                
+               <label> Father Name</label>
+               <input type=" text" id=" fname">
+
+               
+               <label>RollNo.</label>
+                <input type=" text" id=" roll">
+
+                
+               <label>Contact Number</label>
+               <input type=" number" id=" contcNmbr">
+
+               
+               <label>CNIC</label>
+                <input type=" number" id=" cnic">
+
+
+                
+               <label>Picture</label>
+               <input type="submit" id=" picture" value="upload"><br>
+
+               
+               <label>Course Name</label>
+                <input type=" text" id=" course">
+ 
+
+                <button type="button" id="addData">Add data</button>
+            </div>
+
+            <div class="DetailInformation">
+                <div class="searchTeacher">
+                    <input type="search" id="srchTeachr" placeholder="Search by teacher name">
+                    <button type="button" value="search" id="teachrBtn">search</button>
+                    <ul id=" show-teacher">
+                        
+
+                    </ul>
+
+                </div>
+                <div class="searchStd">
+                    <input type="search" id="srchStd" placeholder="Search by teacher student name">
+                    <button type="button" value="search" id="stdBtn">search</button>
+                    <ul id="show-list"></ul>
+                </div>
+                
+                    
+                </div>
+               
+            </div>
+            
+            
+        </div>
+    </div>
+
+    
+    
+    
+</body>
+<script type="module" src="admin.js"></script>
+</html>
